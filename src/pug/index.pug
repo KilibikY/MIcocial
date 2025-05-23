@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/styles.css")
+        title Місосіал найптужній сайт в мере понял он самая патажная 
+    body 
+        include compoment/mixin
+        header 
+            .wrapper
+                .logoing 
+                    .main-header.wrapper
+                        +menu(mainMenu)
+                    .mini-header 
+                        p.holo -- SOCIAL MARKETING & ANALYTICS --
+                        h3 Pricing Table
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        p elit, sed do eiusmod tempor incididunt ut.
+                        a(href="#") i don't not know 
+        main
+        .karateli.flex-between.items-center.gap
+            p -- MIsocial --
+            h4 Select a Plan
+            p Lorem ipsum dolor sit amet, consectetur adipisicing 
+            p elit, sed do eiusmod tempor incididunt ut.
+        .karatelitop.flex-between.items-center
+            +card(Cardinfo.satelite)
+            +card(CardInfo.satelite)
+            +card(cardinfo.satelite)
+        footer
+
+            .div(class="mapa")
+                .map
+                    p SOCAL MARKETING & ANALYTICS
+                    h2 Take control of your data
+                    a(href="#") Get started
+                    a(href="#")  explore features
+
+
+            +menu(mainMenu, "dark")
+            .div(class="footer")
+                .wrapper 
+                    p © 2017 Mass Impressions & Tranmautritam. Make the right impression.
+                    a(href="#")
+                    a(href="#")
+                    a(href="#")   

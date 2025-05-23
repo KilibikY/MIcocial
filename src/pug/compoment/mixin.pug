@@ -1,0 +1,131 @@
+-
+    let mainMenu = [
+        [ 'home ', '#'],
+        [ 'Why MISOCIAL', '#'],
+        [ 'Features ', '#'],
+        [ 'Articles ', '#'],
+        [ 'Pricing ', '#'],
+    ]
+
+mixin menu(mainMenu, colorTheme="light")
+    .navigation.flex-between.items-center.gap 
+    .logo(class=colorTheme)
+        a(href="index.html") 
+            img(src="../img/logo.png", alt="Logo")
+            span MISOCIAL
+    nav.nav.flex-between.items-center(class=colorTheme)
+        ul 
+            for item in mainMenu 
+                li 
+                    a(href=item[1]) #{item[0]}
+        a.cta-nav(href="#") get started     
+
+-
+    let Cardinfo = {
+        satelite: {
+            img: "../img/onecard.png",
+            href: "0",
+            personal: "personal",
+            currency: "$",
+            price: "0",
+            isMonth: true,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btn: "Get started",
+        },
+    }
+
+mixin card(oneCard)
+    figure
+        figcaption 
+            img(src=oneCard.img, alt="#")
+            p.personal #{oneCard.personal}
+            p.price
+                span.currency #{oneCard.currency}
+                b #{oneCard.price}
+                if isMonth
+                    | /month
+                else 
+                    | /month 
+            ul.description 
+                for item in oneCard.description 
+                    li #{item}
+            a.Onecard(href=oneCard.href) #{oneCard.btn}
+-
+    let CardInfo = {
+        satelite: {
+            img: "../img/twocard.png",
+            href: "1",
+            personal: "personal",
+            currency: "$",
+            price: "29",
+            isMonth: true,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btn: "Get started",
+        },
+    }
+
+mixin card(twoCard)
+    figure
+        figcaption 
+            img(src=twoCard.img, alt="#")
+            p.personal #{twoCard.personal}
+            p.price
+                span.currency #{twoCard.currency}
+                b #{twoCard.price}
+                if isMonth
+                    | /month
+                else 
+                    | /month 
+            ul.description 
+                for item in twoCard.description 
+                    li #{item}
+            a.Onecard(href=twoCard.href) #{twoCard.btn}
+-
+
+    let cardinfo = {
+        satelite: {
+            img: "../img/treecard.png",
+            href: "2",
+            personal: "personal",
+            currency: "$",
+            price: "49",
+            isMonth: true,
+            description: [
+                "Lorem ipsum dolor sit amet.",
+                "sed do eiusmod tempor incididunt ut.",
+                "Labore et dolore magna aliqua.",
+                "quis nostrud exercitation ullamco laboris.",
+                "Ea commodo consequat.",
+            ],
+            btn: "Get started",
+        },
+    }
+
+mixin card(treeCard)
+    figure
+        figcaption 
+            img(src=treeCard.img, alt="#")
+            p.personal #{treeCard.personal}
+            p.price
+                span.currency #{treeCard.currency}
+                b #{treeCard.price}
+                if isMonth
+                    | /month
+                else
+                    | /month       
+            ul.description 
+                for item in treeCard.description 
+                    li #{item}
+            a.Onecard(href=treeCard.href) #{treeCard.btn}
