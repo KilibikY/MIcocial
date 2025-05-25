@@ -36,7 +36,7 @@ mixin menu(mainMenu, colorTheme="light")
                 "quis nostrud exercitation ullamco laboris.",
                 "Ea commodo consequat.",
             ],
-            btn: "Get started",
+            btn: "select plan",
         },
     }
 
@@ -52,7 +52,7 @@ mixin card(oneCard)
                     | /month
                 else 
                     | /month 
-            ul.description 
+            ul.description
                 for item in oneCard.description 
                     li #{item}
             a.Onecard(href=oneCard.href) #{oneCard.btn}
@@ -72,7 +72,7 @@ mixin card(oneCard)
                 "quis nostrud exercitation ullamco laboris.",
                 "Ea commodo consequat.",
             ],
-            btn: "Get started",
+            btn: "select plan",
         },
     }
 
@@ -88,7 +88,7 @@ mixin card(twoCard)
                     | /month
                 else 
                     | /month 
-            ul.description 
+            ul.description
                 for item in twoCard.description 
                     li #{item}
             a.Onecard(href=twoCard.href) #{twoCard.btn}
@@ -109,7 +109,7 @@ mixin card(twoCard)
                 "quis nostrud exercitation ullamco laboris.",
                 "Ea commodo consequat.",
             ],
-            btn: "Get started",
+            btn: "select plan",
         },
     }
 
@@ -125,7 +125,7 @@ mixin card(treeCard)
                     | /month
                 else
                     | /month       
-            ul.description 
+            ul.description
                 for item in treeCard.description 
                     li #{item}
             a.Onecard(href=treeCard.href) #{treeCard.btn}
