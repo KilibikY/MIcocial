@@ -25,6 +25,8 @@ li
   font-style: normal
   font-display: swap
 
+* 
+  text-decoration: none
 
 body
   margin: 0
@@ -46,18 +48,48 @@ header
   justify-content: space-between
 
 
-.logo span 
+.light span 
   font-size: 30px
   letter-spacing: 6px
-  line-height: 29px
   color: #ffffff
   font-weight: 700
   text-align: center
 
 
+.light a 
+  font-size: 16px
+  color: #ffffff
+
+      
+.dark span
+  font-size: 30px
+  letter-spacing: 6px
+  line-height: 29px
+  color: #37374a
+  font-weight: 700
+  text-align: center
+
+.dark a 
+  font-size: 16px
+  line-height: 19px
+  color: #756edc
+  font-weight: 500
+
+.mini-header a
+  border-radius: 32px
+  border: 1px solid #ffffff
+  background-color: #ffffff
+  padding: 32px
+
+
+.main-header img,
+.nav
+  margin: 25px 0 0 0
+
 .main-header
   display: flex
   justify-content: space-between
+
 
 
 .items-center 
@@ -110,13 +142,19 @@ header
   justify-content: center
 
 .karatelitop img
-  padding-left: 87px
+  display: block
+  margin: 0 auto
   padding-top: 29.5px
 
 .mini-header
   display: flex
   align-items: center
   flex-direction: column
+
+
+
+.mini-header p:first-of-type
+  margin: 99px 0 0 0
 
 
 .mapa,
@@ -168,6 +206,9 @@ figcaption a
   margin-bottom: 33px
 
 
+.karatelitop 
+  margin: 0 0 120px 0
+
 .personal
   font-size: 14px
   letter-spacing: 1px
@@ -195,15 +236,17 @@ figcaption a
 .map 
   +gradient("../img/map.png")
   width: 100%
-
-.map a:first-of-type
-  margin-left: 610px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  flex-direction: column
 
 .map a:last-of-type
   margin-left: 5.5px 
 
 .map a 
-  margin-bottom: 93px
+  margin-bottom: 186px
 
 
 .map p 
@@ -211,7 +254,7 @@ figcaption a
   letter-spacing: 1px
   text-transform: uppercase
   color: #ffffff
-  margin: 89px 0 0 0
+  margin: 178px 0 0 0
 
 
 
@@ -232,19 +275,29 @@ figcaption a
 .footer-svg 
   display: flex
   justify-content: flex-end
+  gap: 8.5px
+  margin: 0 25px 0 0
 
 .footer
   opacity: 0.502
   font-size: 14px
   line-height: 19px
   color: #6a6a77
+  margin-top: 39px
+
+
+.footer-text 
+  margin: 0 0 0 25px
 
 .light 
   .cta-nav
     +btn(false)
 .Onecard
   +btn($fixed: true)
-    
+
+.dark
+  .cta-nav
+    +btn($empty: true)
 
 .mayipupsiki g:hover,
 .mayi g:hover,
