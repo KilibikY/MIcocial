@@ -7,8 +7,7 @@
         [ 'Pricing ', '#'],
     ]
 
-mixin menu(mainMenu, colorTheme="light")
-    .navigation.flex-between.items-center.gap 
+mixin menu(mainMenu, colorTheme="light") 
     .logo(class=colorTheme)
         a(href="index.html") 
             img(src="img/logo.png", alt="Logo")
@@ -18,6 +17,7 @@ mixin menu(mainMenu, colorTheme="light")
             for item in mainMenu 
                 li 
                     a(href=item[1]) #{item[0]}
+                
         a.cta-nav(href="#") get started     
 
 -
