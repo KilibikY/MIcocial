@@ -59,6 +59,8 @@ header
 .light a 
   font-size: 16px
   color: #ffffff
+  display: flex
+  align-items: flex-end
 
       
 .dark span
@@ -116,12 +118,33 @@ header
   margin: 12.5px 0 19px 0
 
 .karateli p:first-of-type
+  position: relative
   font-size: 14px
   letter-spacing: 1px
   line-height: 32px
   text-transform: uppercase
   color: #9fa4af
   margin: 60px 0 0 0 
+
+
+.karateli p:first-of-type::before
+  content: ""
+  position: absolute
+  background-color: #6e45e2
+  width: 25px
+  height: 2px
+  top: 50%
+  left: -50%
+
+.karateli p:first-of-type::after
+  content: ""
+  position: absolute
+  background-color: #6e45e2
+  width: 25px
+  height: 2px
+  top: 50%
+  right: -50%
+
 
 
 .karateli p 
@@ -139,6 +162,7 @@ header
 .karatelitop
   display: flex
   justify-content: center
+  align-items: baseline
 
 .karatelitop img
   display: block
@@ -166,11 +190,31 @@ header
   align-items: center
 
 .holo 
+  position: relative 
   font-size: 14px
   letter-spacing: 1px
   text-transform: uppercase
   color: #ffffff
   padding: 21.5px
+
+
+.holo::before
+  content: ""
+  position: absolute
+  background-color: #fff
+  width: 25px
+  height: 2px
+  bottom: 6%
+  left: -13%
+
+.holo::after
+  content: ""
+  position: absolute
+  background-color: #fff
+  width: 25px
+  height: 2px
+  bottom: 6% 
+  right: -13%
 
 .mini-header h3 
   margin: 0
@@ -220,12 +264,24 @@ figcaption a
   text-transform: uppercase
   color: #9fa4af
 
-.price
-  font-size: 30px
+.price b 
+  position: reletive 
+  font-size: 40px
   letter-spacing: -2px
   color: #4f4f6f
   text-align: center
   margin: 0
+
+
+.price span
+  content: ""
+  position: absolute
+  bottom: -28%
+  left: 50%
+
+
+
+
 
 .description
   font-size: 13px
@@ -245,6 +301,14 @@ figcaption a
   align-items: center
   justify-content: center
   flex-direction: column
+
+
+
+.currency 
+  font-size: 16px
+  letter-spacing: -1px
+  line-height: 51px
+  color: #4f4f6f
   
 
 .map a 
