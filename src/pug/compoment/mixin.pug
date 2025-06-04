@@ -46,8 +46,8 @@ mixin card(oneCard)
             img(src=oneCard.img, alt="#")
             p.personal #{oneCard.personal}
             p.price
-                span.currency #{oneCard.currency}
                 b #{oneCard.price}
+                    span.currency #{oneCard.currency}
                 if isMonth
                     | /month
                 else
@@ -82,8 +82,8 @@ mixin card(twoCard)
             img(src=twoCard.img, alt="#")
             p.personal #{twoCard.personal}
             p.price
-                span.currency #{twoCard.currency}
                 b #{twoCard.price}
+                    span.currency #{twoCard.currency}
                 if isMonth
                     | /month
                 else 
@@ -119,8 +119,8 @@ mixin card(treeCard)
             img(src=treeCard.img, alt="#")
             p.personal #{treeCard.personal}
             p.price
-                span.currency #{treeCard.currency}
-                    b #{treeCard.price}
+                b #{treeCard.price}
+                    span.currency #{treeCard.currency}
                 if isMonth
                     | /month
                 else
