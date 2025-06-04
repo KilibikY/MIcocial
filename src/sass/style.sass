@@ -54,10 +54,12 @@ header
   color: #ffffff
   font-weight: 700
   text-align: center
+  padding: 0 0 5px 15px
 
 
 .light a 
   font-size: 16px
+  font-weight: 500
   color: #ffffff
   display: flex
   align-items: flex-end
@@ -77,10 +79,17 @@ header
   color: #9fa4af
   font-weight: 500
 
+.mini-header
+  position: relative
+
+
 .mini-header a
-  border-radius: 128px
-  background-color: #ffffff
-  padding: 32px
+  position: absolute
+  background-color:#fff
+  width: 64px
+  height: 64px
+  border-radius: 32px
+  bottom: 0%
 
 
 .main-header img,
@@ -234,7 +243,7 @@ header
 
 
 .mini-header p:last-of-type
-  padding-bottom: 181px
+  padding-bottom: 271px
 
 
 
@@ -273,18 +282,23 @@ figcaption a
   margin: 0
 
 
-.price span
+.currency
   content: ""
   position: absolute
-  bottom: -28%
+  bottom: -55%
   left: 50%
 
 
+.mini-header img
+  position: absolute
+  content: ""
+  top: 40%
+  left:  39%
 
 
 
 .description
-  font-size: 13px
+  font-size: 16px
   line-height: 28px
   color: #9fa4af
   text-align: center
