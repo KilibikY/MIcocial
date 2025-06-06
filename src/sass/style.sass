@@ -5,8 +5,7 @@ li
 
 
 
-* 
-  transition: all 1s ease-in-out
+
 
 @font-face
   font-family: 'Maven Pro'
@@ -137,7 +136,7 @@ header
 
 
 .karateli h4 
-  font-size: 30px
+  font-size: 60px
   letter-spacing: -2px
   line-height: 36px
   color: #4f4f6f
@@ -158,7 +157,7 @@ header
   position: absolute
   background-color: #6e45e2
   width: 25px
-  height: 2px
+  height: 1px
   top: 50%
   left: -50%
 
@@ -167,7 +166,7 @@ header
   position: absolute
   background-color: #6e45e2
   width: 25px
-  height: 2px
+  height: 1px
   top: 50%
   right: -50%
 
@@ -210,6 +209,10 @@ header
   color: #6e45e2
   text-decoration: underline
 
+
+.dark a:first-of-type:hover
+  text-decoration: none
+
 .mapa,
 .mapa p,
 .mapa h2
@@ -233,7 +236,7 @@ header
   position: absolute
   background-color: #fff
   width: 25px
-  height: 2px
+  height: 1px
   bottom: 6%
   left: -13%
 
@@ -242,25 +245,29 @@ header
   position: absolute
   background-color: #fff
   width: 25px
-  height: 2px
+  height: 1px
   bottom: 6% 
   right: -13%
 
 .mini-header h3 
   margin: 0
   padding: 9px
-  font-size: 61px
+  font-size: 86px
   letter-spacing: -3px
   color: #ffffff
   text-align: center
 
 .mini-header p
-  font-size: 16px
+  font-size: 14px
   color: #ffffff
   text-align: center
   margin: 0
   padding: 9px
 
+.mini-header p:last-of-type
+  font-size: 16px
+.mini-header p:nth-of-type(2)
+  font-size: 16px
 
 
 .mini-header p:last-of-type
@@ -324,8 +331,7 @@ figcaption a
   text-align: center
   padding: 0 20px
 
-.mapa afirst-child
-  padding: 0 28px
+
 
 .map 
   +gradient("../img/map.png")
@@ -373,7 +379,7 @@ figcaption a
   letter-spacing: -2px
   color: #ffffff
   text-align: center 
-  margin: 24px 0 17px 0
+  margin: 10px 0 17px 0
 
 
 .footer-text
@@ -432,6 +438,10 @@ hr
   border: none
   text-decoration: underline
   color: #fff
+
+.light li 
+  transition: all 0.3s ease-in-out
+
 
 
 
