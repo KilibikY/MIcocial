@@ -4,6 +4,10 @@ li
   list-style: none
 
 
+
+* 
+  transition: all 1s ease-in-out
+
 @font-face
   font-family: 'Maven Pro'
   src: url('../fonts/MavenPro-Regular.woff2') format("woff2"), url('../fonts/MavenPro-Regular.woff') format("woff"), url('../fonts/MavenPro-Regular.ttf') format("truetype")
@@ -32,6 +36,9 @@ body
   margin: 0
   padding: 0
   font-family: 'Maven Pro'
+
+html 
+  scroll-behavior: smooth
 
 .wrapper 
   margin: 0 auto
@@ -72,12 +79,16 @@ header
   color: #37374a
   font-weight: 700
   text-align: center
+  padding: 0 0 5px 15px
 
 .dark a 
   font-size: 16px
   line-height: 19px
   color: #9fa4af
   font-weight: 500
+  display: flex
+  align-items: flex-end
+  transition: all 1s ease-in-out
 
 .mini-header
   position: relative
@@ -90,6 +101,12 @@ header
   height: 64px
   border-radius: 32px
   bottom: 0%
+
+
+
+.mini-header a:hover 
+  box-shadow: 0 0 10.5px rgba(204,204,223,0.5)
+  transition: all 1s ease-in-out
 
 
 .main-header img,
@@ -189,6 +206,10 @@ header
   padding: 99px 0 0 0
 
 
+.dark a:hover 
+  color: #6e45e2
+  text-decoration: underline
+
 .mapa,
 .mapa p,
 .mapa h2
@@ -275,7 +296,7 @@ figcaption a
 
 .price b 
   position: relative 
-  font-size: 40px
+  font-size: 60px
   letter-spacing: -2px
   color: #4f4f6f
   text-align: center
@@ -284,8 +305,8 @@ figcaption a
 
 .currency
   position: absolute
-  top: -10%
-  left: -30%
+  top: 0%
+  left: -16%
 
 
 .mini-header img
@@ -322,6 +343,7 @@ figcaption a
   letter-spacing: -1px
   line-height: 51px
   color: #4f4f6f
+  font-weight: normal
   
 
 .map a 
@@ -408,7 +430,8 @@ hr
 .light li:hover
   transform: scale(1)
   border: none
-  border-bottom: 2px solid #fff
+  text-decoration: underline
+  color: #fff
 
 
 
